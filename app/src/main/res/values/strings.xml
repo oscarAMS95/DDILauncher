@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Launcher</string>
+    <string name="title_activity_nuevo_contacto">NuevoContactoActivity</string>
+</resources>

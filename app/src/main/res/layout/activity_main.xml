@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xeon.ddilauncher.MainActivity">
+
+    <ImageButton
+        android:id="@+id/botonMain"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignLeft="@+id/galleryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/galleryButton"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="0dp"
+        android:background="@drawable/unnamed"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/phoneButton"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/botonMain"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/contactosButton"
+        android:layout_toRightOf="@+id/contactosButton"
+        android:background="@drawable/phone"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/phone" />
+
+    <ImageButton
+        android:id="@+id/messageButton"
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:layout_above="@+id/newMessage"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/newMessage"
+        android:layout_toRightOf="@+id/newMessage"
+        android:background="@drawable/message"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/message" />
+
+    <ImageButton
+        android:id="@+id/newMessage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignLeft="@+id/phoneButton"
+        android:layout_alignStart="@+id/phoneButton"
+        android:layout_below="@+id/calculatorButton"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/newmessage"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newmessage" />
+
+    <ImageButton
+        android:id="@+id/contactosButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="165dp"
+        android:background="@drawable/contactsicon"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/contactsicon" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignBottom="@+id/contactosButton"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="268dp"
+        android:layout_toEndOf="@+id/newMessage"
+        android:layout_toRightOf="@+id/newMessage"
+        android:background="@drawable/add"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/cameraButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignLeft="@+id/phoneButton"
+        android:layout_alignStart="@+id/phoneButton"
+        android:layout_below="@+id/contactosButton"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/camera"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/camera" />
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_above="@+id/botonMain"
+        android:layout_alignLeft="@+id/calculatorButton"
+        android:layout_alignStart="@+id/calculatorButton"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/calendar"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageButton
+        android:id="@+id/calculatorButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignEnd="@+id/messageButton"
+        android:layout_alignRight="@+id/messageButton"
+        android:layout_alignTop="@+id/cameraButton"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/calculator"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calculator" />
+
+    <ImageButton
+        android:id="@+id/clockButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignBottom="@+id/messageButton"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="268dp"
+        android:layout_toLeftOf="@+id/newMessage"
+        android:layout_toStartOf="@+id/newMessage"
+        android:background="@drawable/clock"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/clock" />
+
+    <ImageButton
+        android:id="@+id/galleryButton"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_above="@+id/messageButton"
+        android:layout_alignLeft="@+id/contactosButton"
+        android:layout_alignStart="@+id/contactosButton"
+        android:layout_marginBottom="164dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:background="@drawable/galery"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/galery" />
+
+</android.support.constraint.ConstraintLayout>
